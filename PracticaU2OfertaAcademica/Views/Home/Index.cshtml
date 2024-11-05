@@ -1,0 +1,12 @@
+﻿@{
+    Layout = "_Layout";
+}
+@model IEnumerable<PracticaU2OfertaAcademica.Models.Carreras>
+
+<h1>Oferta Académica</h1>
+<ol class="rectangle-list">
+	@foreach (var c in Model)
+	{
+		<li><a href="/@c.Nombre/Info">@c.Plan @c.Nombre</a></li>
+	}
+</ol>
