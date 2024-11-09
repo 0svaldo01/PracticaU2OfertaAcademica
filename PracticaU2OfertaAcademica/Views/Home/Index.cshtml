@@ -7,6 +7,6 @@
 <ol class="rectangle-list">
 	@foreach (var c in Model)
 	{
-		<li><a href="/@c.Nombre/Info">@c.Plan @c.Nombre</a></li>
+		<li><a href="/@c.Nombre.Replace(" ","-")/Info">@c.Plan @c.Nombre</a></li>
 	}
 </ol>
